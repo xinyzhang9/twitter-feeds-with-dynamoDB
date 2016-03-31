@@ -1,0 +1,39 @@
+SPL05 - Working with Amazon DynamoDB - 3.2
+==========
+Using this command reference. 
+==========
+1. Locate the section you need. Each section in this file matches a section in the lab instructions.
+
+2. Replace items in angle brackets - < > - with appropriate values. For example, in this command you would replace the value - <JobFlowID> - (including the brackets) with the parameter indicated in the lab instructions:    elastic-mapreduce --list <JobFlowID>
+3. Do NOT enable the Word Wrap feature in Windows Notepad or the text editor you use to view this file.
+
+==========
+Connect to the Amazon EC2 instance using the OpenSSH CLI client
+==========
+
+chmod 600 ~/<Downloads/qwiklab-l33-5018.pem>
+ssh -i ~/<Downloads/qwiklab-l33-5018.pem> ec2-user@<public DNS>
+
+
+==========
+Load Data into DynamoDB Tables
+==========
+
+sudo nano /var/www/html/dynamosample/load_data_into_dynamo.php
+
+http://<YourDNSServerName>/dynamosample/load_data_into_dynamo.php
+
+http://<YourDNSServerName>/dynamosample/query_dynamo.php 
+
+==========
+Configure the web server instance
+==========
+
+sudo /var/www/html/dynamosample/settoken.sh
+
+http://<your DNS name>/dynamosample/
+
+
+
+
+© 2014 Amazon Web Services, Inc. or its affiliates. All rights reserved.
